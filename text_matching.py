@@ -10,8 +10,8 @@ cv = CountVectorizer(ngram_range=(1,3))
 lemmatizer = WordNetLemmatizer()
 stopwords = stopwords.words('english')
 
-data = pd.read_csv("string_matching.csv")
-#data.drop(columns=['Unnamed: 10','Unnamed: 11','Unnamed: 12'], inplace=True)
+data = pd.read_csv("string_matching.xlsx")
+data.drop(columns=['Unnamed: 10','Unnamed: 11','Unnamed: 12'], inplace=True)
 
 
 # Extracting all the text from public study columns
