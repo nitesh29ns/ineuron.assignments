@@ -10,7 +10,7 @@ cv = CountVectorizer(ngram_range=(1,3))
 lemmatizer = WordNetLemmatizer()
 stopwords = stopwords.words('english')
 
-data = pd.read_csv("string_matching.xlsx")
+data = pd.read_excel("string_matching.xlsx")
 data.drop(columns=['Unnamed: 10','Unnamed: 11','Unnamed: 12'], inplace=True)
 
 
